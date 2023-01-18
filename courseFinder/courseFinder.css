@@ -1,0 +1,82 @@
+header {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: lightseagreen;
+}
+
+footer {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    padding: 50px;
+}
+
+.leftMenu {
+    flex: 1;
+}
+
+.courses {
+    flex: 4;
+}
+
+.courseType, .courseSubject {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+.course {
+    display: flex;
+    padding: 10px 0px;
+    margin: 10px 10px;
+    border: 1px solid;
+}
+
+.uLogo {
+    float: left;
+    width: 20%;
+    height: 20%
+}
+
+.uDetails {
+    padding: 0px 10px;
+    float: left;
+}
+
+.uDetails span {
+    display: block;
+}
+
+.uCollege {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.uMode {
+    color: darkgrey;
+    font-weight: 700;
+}
+
+.uCategory {
+    font-weight: 700;
+}
+
+.uTuitionFee {
+    font-weight: 700;
+}
+/* .uCollege, .uVenue, .uCategory, uCourse {
+    display: block;
+} */
