@@ -5,10 +5,6 @@ header {
     background-color: lightseagreen;
 }
 
-footer {
-    text-align: center;
-}
-
 .container {
     display: flex;
     padding: 50px;

@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="courseFinder.css">
+    <link rel="stylesheet" href="/courseFinder/courseFinder.css">
 </head>
 <body>
     <header>
         <h1>Course Finder for Bachelor Computer Studies</h1>
+        <h2 class="subjectName" style="color:blue;">All Subjects</h2>
     </header>
     <div class="container">
         <div class="leftMenu">
-            <input type="text" placeholder="Search..." class="search">
+            <input type="text" placeholder="Search course name..." class="search">
             <h3>Mode</h3>
-            <div class="courseType">
-                <span class="cMode">All</span>
-                <span class="cMode">Full Time</span>
-                <span class="cMode">Part Time</span>
+            <div class="courseType" style="display: block;">
+                <input type="radio" class="cMode" name="courseFilter" value="All" id="all" checked="checked">
+                <label for="all">All</label><br>
+                <input type="radio" class="cMode" name="courseFilter" value="Full Time" id="full">
+                <label for="full">Full Time</label><br>
+                 <input type="radio" class="cMode" name="courseFilter" value="Part Time" id="part"> 
+                 <label for="part">Part Time</label><br>               
             </div>
             <h3>Subject</h3>
             <div class="courseSubject">
@@ -28,13 +32,16 @@
                 <input type="range" class="priceRange">
                 <span class="priceValue"></span>
             </div>
+            <div style="padding: 20px 0;">
+                <a href="/index.html">Home</a>
+            </div>
         </div>
         <div class="courses">
         </div>
     </div>
     <footer>
-        <a href="/index.html">Back to Home Page</a>
+
     </footer>
-    <script src="courseFinder.js"></script>
+    <script src="/courseFinder/courseFinder.js"></script>
 </body>
 </html>

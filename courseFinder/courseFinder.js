@@ -184,7 +184,7 @@ const data = [
         college: "SCOPE",
         logo: "scope.jpg",
         venue: "Kowloon Tong, Tsim Sha Tsui",
-        category: "Business Information System",
+        category: "Network & Security",
         course: "BSc(Honor) Computer Networks and Security",
         university: "Conventry University",
         mode: "Full Time",
@@ -202,7 +202,7 @@ const data = [
         college: "SPEED",
         logo: "speed.jpg",
         venue: "Hung Hom",
-        category: "Business Information System",
+        category: "Applied Computing",
         course: "BSc(Honours) in Applied Sciences (Information Systems and Web Technologies)",
         university: "N/A",
         mode: "Part Time",
@@ -238,7 +238,7 @@ const data = [
         college: "HKU",
         logo: "hku.jpg",
         venue: "",
-        category: "Computer Science",
+        category: "Applied Computing",
         course: "BSC(Hons) in Applied Computing",
         university: "N/A",
         mode: "Full Time",
@@ -256,7 +256,7 @@ const data = [
         college: "HKU",
         logo: "hku.jpg",
         venue: "",
-        category: "Computer Science",
+        category: "Applied Computing",
         course: "BA(Hons) in Applied and Human-Centered Computing",
         university: "N/A",
         mode: "Full Time",
@@ -364,7 +364,7 @@ const data = [
         college: "Hang Seng University",
         logo: "hsu.jpg",
         venue: "Sha Tin",
-        category: "Computer Science",
+        category: "Applied Computing",
         course: "BSc (Hons) in Applied Computing",
         university: "N/A",
         mode: "Full Time",
@@ -525,10 +525,13 @@ const data = [
 
 const coursesContainer = document.querySelector(".courses");
 const courseType = document.querySelector(".courseType");
+// const courseFilters = document.querySelector('input[name="courseFilter"]')
 const categoriesContainer = document.querySelector(".courseSubject");
 const searchInput = document.querySelector(".search");
 const priceRange = document.querySelector(".priceRange");
 const priceValue = document.querySelector(".priceValue");
+const subjectName = document.querySelector(".subjectName");
+let selectedData = data;
 
 const displayCourses = (filteredCourses) => {
     coursesContainer.innerHTML = filteredCourses.map((course) =>
@@ -558,8 +561,14 @@ const displayCourses = (filteredCourses) => {
 
 const setCourseType = () => {
     courseType.addEventListener("click", (e) => {
-        const selectedType = (e.target.textContent);
-        selectedType === "All" ? displayCourses(data) : displayCourses(data.filter((item) => item.mode === selectedType));
+        selectedType = (e.target.value);
+        if (selectedType === "All") {
+            selectedData = data;
+        }
+        else {
+            selectedData = data.filter((item) => item.mode === selectedType);
+        };
+        displayCourses(selectedData);
     });
 };
 
@@ -568,6 +577,8 @@ const setCourseSubject = () => {
     const categories = ["All", ...allCats.filter((item, i) => {
         return allCats.indexOf(item) === i; 
     })];
+
+    categories.sort();
 
     categoriesContainer.innerHTML = categories.map(cat =>
         `
@@ -578,10 +589,13 @@ const setCourseSubject = () => {
     categoriesContainer.addEventListener("click", (e) => {
         const selectedCat = (e.target.textContent);
 
-        selectedCat === "All" ? 
-        displayCourses(data) 
-        : displayCourses(data.filter((item) => item.category === selectedCat
-        ));
+        if (selectedCat === "All") {
+            displayCourses(selectedData);
+            subjectName.innerHTML = "All Subjects";
+        } else if (categories.includes(selectedCat)) {
+            displayCourses(selectedData.filter((item) => item.category === selectedCat));
+            subjectName.innerHTML = selectedCat;
+        }
     });
 };
 
@@ -589,13 +603,15 @@ searchInput.addEventListener("keyup",(e) => {
     const value = e.target.value.toLowerCase();
 
     if(value) {
-        displayCourses(data.filter(item => item.course.toLowerCase().indexOf(value) !== -1))
+        displayCourses(selectedData.filter(item => item.course.toLowerCase().indexOf(value) !== -1))
 
     } else {
-        displayCourses(data);
+        displayCourses(selectedData);
     }
 
 });
+
+
 
 const setPrices = () => {
     const priceList = data.map((item) => item.tuition);
@@ -609,7 +625,7 @@ const setPrices = () => {
 
     priceRange.addEventListener("input",(e) => {
         priceValue.textContent = "$" + e.target.value;
-        displayCourses(data.filter((item) => item.tuition <= e.target.value));
+        displayCourses(selectedData.filter((item) => item.tuition <= e.target.value));
     })
 };
 
