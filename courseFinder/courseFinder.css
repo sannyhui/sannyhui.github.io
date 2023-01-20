@@ -73,6 +73,7 @@ img {
 .uTuitionFee {
     font-weight: 700;
 }
-/* .uCollege, .uVenue, .uCategory, uCourse {
-    display: block;
-} */
+
+footer {
+    text-align: center;
+}

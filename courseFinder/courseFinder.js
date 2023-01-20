@@ -589,12 +589,12 @@ const setCourseSubject = () => {
     categoriesContainer.addEventListener("click", (e) => {
         const selectedCat = (e.target.textContent);
 
-        if (selectedCat === "All") {
-            displayCourses(selectedData);
-            subjectName.innerHTML = "All Subjects";
-        } else if (categories.includes(selectedCat)) {
+        if (categories.includes(selectedCat)) {
             displayCourses(selectedData.filter((item) => item.category === selectedCat));
             subjectName.innerHTML = selectedCat;
+        } else {
+            displayCourses(selectedData);
+            subjectName.innerHTML = "All Subjects";
         }
     });
 };
