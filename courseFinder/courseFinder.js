@@ -167,7 +167,7 @@ const data = [
         logo: "scope.jpg",
         venue: "Kowloon Tong, Tsim Sha Tsui",
         category: "Business Information System",
-        course: "BSc(Honor) Computer Networks and Security",
+        course: "BSc (Hons) Information Technology for Business",
         university: "Conventry University",
         mode: "Part Time",
         qf: 5,
@@ -184,8 +184,8 @@ const data = [
         college: "SCOPE",
         logo: "scope.jpg",
         venue: "Kowloon Tong, Tsim Sha Tsui",
-        category: "Network & Security",
-        course: "BSc(Honor) Computer Networks and Security",
+        category: "Business Information System",
+        course: "BSc (Hons) Information Technology for Business",
         university: "Conventry University",
         mode: "Full Time",
         qf: 5,
@@ -220,10 +220,10 @@ const data = [
         college: "SPEED",
         logo: "speed.jpg",
         venue: "Hung Hom",
-        category: "Business Information System",
-        course: "Bachelor of Science (Honours) in Information and Communications Technology",
+        category: "Applied Computing",
+        course: "Bachelor of Science (Honours) in Applied Sciences (Information Systems and Web Technologies)",
         university: "N/A",
-        mode: "Part Time",
+        mode: "Full Time",
         qf: 5,
         duration: 24,
         tuition: 209820.00,
@@ -233,49 +233,14 @@ const data = [
         modules: "Scheme Compulsory: Business Communication in Chinese, Effective Professional Communication in English, Integrated Study (Applied Sciences),  Management of Technology/Innovation and Entrepreneurship, Professional Ethics and Social Responsibilities, Research Methodology in Applied Sciences. Foundation: Computer Programming Concepts, Introduction to Internet Technologies, Introduction to Probability and Statistics Award-Specific Compulsory: Computer Network Administration, Computer Security, Database Technologies and Management, Electronic Commerce Strategy and Implementation, Enterprise Cloud Computing, Machine Learning for Data Mining, Management Information System, Web Application Development and Management, Web Systems and Technologies. Elective (any 2): Artificial Intelligence, Big Data Analytics, Foundation of Animation, Mobile Application Development, Multimedia Technology for the Internet, FinTech and Blockchain, Project Management",
         link: "https://www.speed-polyu.edu.hk/programme/applied-sciences-iswt"
     },
-    {
-        id: 14,
-        college: "HKU",
-        logo: "hku.jpg",
-        venue: "",
-        category: "Applied Computing",
-        course: "BSC(Hons) in Applied Computing",
-        university: "N/A",
-        mode: "Full Time",
-        qf: 5,
-        duration: 48,
-        tuition: 110710.00,
-        intake: "2023",
-        start: "2023",
-        assessment: "",
-        modules: "Year 1: Programming Methodology, Programming and Data Structures, Computer System, Contemporary Information Technologies, Introduction to Business. Year 2: Computer Network, Discrete Mathematics and Algorithms, Database Design and Management, Graphic and Digital Design, Advanced Programming, Principles of Management. Year 3: AI, Computing Technologies in Web Applications, Software Engineering, Human-Computer Interaction, Professionalism and Ethics in Computing, Major Elective 1 & 2. Year 4: Senior Project (2 semesters), User Experience Designs, Major Elective 3 & 4",
-        link: "https://comp.hsu.edu.hk/en/computing-degree/program-structure-21/"
-    },
-    {
-        id: 15,
-        college: "HKU",
-        logo: "hku.jpg",
-        venue: "",
-        category: "Applied Computing",
-        course: "BA(Hons) in Applied and Human-Centered Computing",
-        university: "N/A",
-        mode: "Full Time",
-        qf: 5,
-        duration: 48,
-        tuition: 110710.00,
-        intake: "2023",
-        start: "2023",
-        assessment: "",
-        modules: "Year 1: Programming Methodology, Programming and Data Structures, Computer System, Introduction to Business, Psychology. Year 2: Computer Network, Discrete Mathematics and Algorithms, Database Design and Management, Graphic and Digital Design, Principles of Managment. Year 3: Computing for Web Applications, Software Engineering, Human-Computer Interaction, Professionalism and Ethics in Computing, Digital Humanities and Chinese Computing, Major Elective 1 -3. Year 4:  Senior Project (2 semesters), User Experience Designs, Internet Culture, Major Elective 4 - 6",
-        link: "https://comp.hsu.edu.hk/en/computing-degree/programme-structure/"
-    },
+    
     {
         id: 16,
         college: "Thei",
         logo: "thei.jpg",
         venue: "Chai Wan and other campuses",
         category: "Business Information System",
-        course: "BA(Hons) in Applied and Human-Centered Computing",
+        course: "Bachelor of Science (Honours) Information and Communications Technology",
         university: "N/A",
         mode: "Part Time",
         qf: 5,
@@ -285,7 +250,7 @@ const data = [
         start: "2023",
         assessment: "",
         modules: "Year 3: Mobile Applications Development, Game Engines & Game Development, Advanced Database Systems, Network Switching & Routing, Cloud Computing, Enterprise Architecture & System Development, Work-integrated Learning, General Education Core. Module: Chinese 2, General Education Core Module: English for Academic Studies 2, General Education Core Module: English for Professional Purposes, General Education Elective Module 3, Program Elective Module 1. Year 4: Cybersecurity Operations, Machine Learning, Data Science, Modern Web Technology &        Development, Enterprise Network Technologies, Advanced Topics in ICT, Program Elective Module 2, Program Elective Module 3, Final Year Project 1, Final Year Project 2, General Education Elective Module 4",
-        link: "https://comp.hsu.edu.hk/en/computing-degree/programme-structure/"
+        link: "https://www.thei.edu.hk/programme/innovation-and-information-technology/bachelor-of-science-honours-in-information-and-communications-technology"
     },
     {
         id: 17,
@@ -293,7 +258,7 @@ const data = [
         logo: "thei.jpg",
         venue: "Chai Wan and other campuses",
         category: "Business Information System",
-        course: "BA(Hons) in Applied and Human-Centered Computing",
+        course: "Bachelor of Science (Honours) Information and Communications Technology",
         university: "N/A",
         mode: "Full Time",
         qf: 5,
@@ -303,7 +268,7 @@ const data = [
         start: "2023",
         assessment: "",
         modules: "Year 3: Mobile Applications Development, Game Engines & Game Development, Advanced Database Systems, Network Switching & Routing, Cloud Computing, Enterprise Architecture & System Development, Work-integrated Learning, General Education Core. Module: Chinese 2, General Education Core Module: English for Academic Studies 2, General Education Core Module: English for Professional Purposes, General Education Elective Module 3, Program Elective Module 1. Year 4: Cybersecurity Operations, Machine Learning, Data Science, Modern Web Technology &        Development, Enterprise Network Technologies, Advanced Topics in ICT, Program Elective Module 2, Program Elective Module 3, Final Year Project 1, Final Year Project 2, General Education Elective Module 4",
-        link: "https://comp.hsu.edu.hk/en/computing-degree/programme-structure/"
+        link: "https://www.thei.edu.hk/programme/innovation-and-information-technology/bachelor-of-science-honours-in-information-and-communications-technology"
     },
     {
         id: 18,
@@ -382,7 +347,7 @@ const data = [
         college: "Hang Seng University",
         logo: "hsu.jpg",
         venue: "Sha Tin",
-        category: "Business Information System",
+        category: "Applied Computing",
         course: "BSc (Hons) in Applied and Human-Centred Computing",
         university: "N/A",
         mode: "Full Time",
@@ -454,7 +419,7 @@ const data = [
         college: "HKIT",
         logo: "hkit.jpg",
         venue: "",
-        category: "Business Information System",
+        category: "Computer Science",
         course: "BSc (Hons) Computing",
         university: "Glyndwr University",
         mode: "Part Time",
@@ -472,7 +437,7 @@ const data = [
         college: "HKIT",
         logo: "hkit.jpg",
         venue: "",
-        category: "Business Information System",
+        category: "Computer Science",
         course: "BSc (Hons) Computing",
         university: "Glyndwr University",
         mode: "Full Time",
@@ -552,7 +517,7 @@ const displayCourses = (filteredCourses) => {
             <span class="uStartDate">Start date: ${course.start}</span>
             <span class="uAssessment">Assessment: ${course.assessment}</span>
             <span class="uModules">Modules: ${course.modules}</span>
-            <span class="uLink">Website: <a href="${course.link}">Link</a></span>
+            <span class="uLink">Website: <a target="_blank" href="${course.link}">Link</a></span>
         </div>
     </div>
     `
