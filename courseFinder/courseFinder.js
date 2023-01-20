@@ -569,12 +569,13 @@ const setCourseType = () => {
             selectedData = data.filter((item) => item.mode === selectedType);
         };
         displayCourses(selectedData);
+        subjectName.innerHTML = "All Subjects";
     });
 };
 
 const setCourseSubject = () => {
     const allCats = data.map(item => item.category);
-    const categories = ["All", ...allCats.filter((item, i) => {
+    const categories = ["All Subjects", ...allCats.filter((item, i) => {
         return allCats.indexOf(item) === i; 
     })];
 
@@ -589,7 +590,10 @@ const setCourseSubject = () => {
     categoriesContainer.addEventListener("click", (e) => {
         const selectedCat = (e.target.textContent);
 
-        if (categories.includes(selectedCat)) {
+        if (selectedCat === "All Subjects") {
+            displayCourses(selectedData);
+            subjectName.innerHTML = selectedCat;
+        } else if (categories.includes(selectedCat)) {
             displayCourses(selectedData.filter((item) => item.category === selectedCat));
             subjectName.innerHTML = selectedCat;
         } else {
@@ -603,8 +607,7 @@ searchInput.addEventListener("keyup",(e) => {
     const value = e.target.value.toLowerCase();
 
     if(value) {
-        displayCourses(selectedData.filter(item => item.course.toLowerCase().indexOf(value) !== -1))
-
+        displayCourses(selectedData.filter(item => item.course.toLowerCase().indexOf(value) !== -1));
     } else {
         displayCourses(selectedData);
     }
