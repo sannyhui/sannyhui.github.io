@@ -502,7 +502,7 @@ const displayCourses = (filteredCourses) => {
     coursesContainer.innerHTML = filteredCourses.map((course) =>
         `
     <div class="course">
-        <img class="uLogo" src="./images/${course.logo}" alt="Logo"/>
+        <img class="uLogo" src="./images/college_images/${course.logo}" alt="Logo"/>
         <div class="uDetails">
             <span class="uCollege">Collegue Name: ${course.college}</span>
             <span class="uVenue">Venue: ${course.venue}</span>
