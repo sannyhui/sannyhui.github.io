@@ -1,3 +1,5 @@
+// 17
+
 const data = [
     {
         id: 1,
@@ -39,7 +41,7 @@ const data = [
         id: 3,
         college: "SHAPE",
         logo: "shape.jpg",
-        venue: "Sha Tin, Chai Wan",
+        venue: "Chai Wan",
         category: "Computer Science",
         course: "BSc(Hons) Computing",
         university: "Conventry University",
@@ -57,7 +59,7 @@ const data = [
         id: 4,
         college: "SHAPE",
         logo: "shape.jpg",
-        venue: "Sha Tin, Chai Wan",
+        venue: "Sha Tin",
         category: "Computer Science",
         course: "BSc(Hons) Computing",
         university: "Conventry University",
@@ -86,14 +88,14 @@ const data = [
         intake: "31/3/2023",
         start: "9/2023",
         assessment: "Oral Presentation, Assignment, Examination, Laboratory, Practical Report",
-        modules: "Commercial Games Development, 3D Modelling and Animation, Audio-Visual Production, Interaction Design, Live Sound, Advanced Performance",
+        modules: "Creative Technologies Project, Commercial Games Development, 3D Modelling and Animation, Audio-Visual Production, Interaction Design, Live Sound, Advanced Performance",
         link: "https://www.shape.edu.hk/course/BSc_Hons_Digital_Media"
     },
     {
         id: 6,
         college: "SHAPE",
         logo: "shape.jpg",
-        venue: "Lee Wai Lee, Tsuen Mun",
+        venue: "Lee Wai Lee",
         category: "Digital Media",
         course: "BSc(Hons) Digital Media",
         university: "University of the West of England, Bristol",
@@ -104,7 +106,7 @@ const data = [
         intake: "31/3/2023",
         start: "9/2023",
         assessment: "Oral Presentation, Assignment, Examination, Laboratory, Practical Report",
-        modules: "Commercial Games Development, 3D Modelling and Animation, Audio-Visual Production, Interaction Design, Live Sound, Advanced Performance",
+        modules: "Creative Technologies Project, Commercial Games Development, 3D Modelling and Animation, Audio-Visual Production, Interaction Design, Live Sound, Advanced Performance",
         link: "https://www.shape.edu.hk/course/BSc_Hons_Digital_Media"
     },
     {
@@ -137,10 +139,10 @@ const data = [
         qf: "N/A",
         duration: 24,
         tuition: 108000.00,
-        intake: "2023",
-        start: "2023",
+        intake: "31/8/2023",
+        start: "10/2023",
         assessment: "Coursework, Final year project",
-        modules: "Real World Project, Operational Research, Data & Information Retrieval, Project Management, Agile Development, Effective Communications, Information Technology and Global Development, Security and Compliance in the Cloud, Individual Project",
+        modules: "Year 2: Information Management and Retrieval, Security Architectures and Cryptography, Computing Group Project, Software Engineering 2, Artificial Intelligence. Year 3: Information Security Management and Governance, Ethical Hacking, Security Opeartions and Incident Management, Digital Forensics and Malware Analysis, Computing Project.",
         link: "https://hkuspace.hku.hk/prog/bsc-hons-cyber-security"
     },
     {
@@ -155,10 +157,10 @@ const data = [
         qf: "N/A",
         duration: 36,
         tuition: 150000.00,
-        intake: "2023",
-        start: "2023",
+        intake: "TBA",
+        start: "TBA",
         assessment: "Year 1:  Coursework. Year 2 & 3:  Coursework, Examination",
-        modules: "Year 1: Computer Systems Architecture and Operation Systems Programming for Data Communication and Networks, Science, Technology, Engineering and Mathematics, Computer Networks. Year 2: Data Communications, Network Practices and Operations, Network and Protocol Analysis, Project Management and Professional Practice Year 3: Advanced Networking, Network Management and Disaster Recovery, Network Security, Individual Project",
+        modules: "Year 1: Computer Systems Architecture and Operation Systems Programming for Data Communication and Networks, Science, Technology, Engineering and Mathematics, Computer Networks. Year 2: Data Communications, Network Practices and Operations, Network and Protocol Analysis, Project Management and Professional Practice. Year 3: Advanced Networking, Network Management and Disaster Recovery, Network Security, Individual Project",
         link: "https://hkuspace.hku.hk/prog/bsc-hon-computer-networks-and-security"
     },
     {
@@ -172,9 +174,9 @@ const data = [
         mode: "Part Time",
         qf: 5,
         duration: 24,
-        tuition: 124000.00,
-        intake: "2023",
-        start: "2023",
+        tuition: 126000.00,
+        intake: "Before 8/2023",
+        start: "9/2023",
         assessment: "Coursework, examination",
         modules: "Real World Project, Operational Research, Data & Information Retrieval, Project Management, Agile Development, Effective Communications, Information Technology and Global Development, Security and Compliance in the Cloud, Individual Project",
         link: "https://www5.scope.edu/programmes/bachelors-degree-top-up/bsc-hons-information-technology-business"
@@ -191,8 +193,8 @@ const data = [
         qf: 5,
         duration: 12,
         tuition: 124000.00,
-        intake: "2023",
-        start: "2023",
+        intake: "Before 8/2023",
+        start: "9/2023",
         assessment: "Coursework, examination",
         modules: "Real World Project, Operational Research, Data & Information Retrieval, Project Management, Agile Development, Effective Communications, Information Technology and Global Development, Security and Compliance in the Cloud, Individual Project",
         link: "https://www5.scope.edu/programmes/bachelors-degree-top-up/bsc-hons-information-technology-business"
@@ -246,7 +248,7 @@ const data = [
         qf: 5,
         duration: 48,
         tuition: 2605.00,
-        intake: "28/2/2023",
+        intake: "Starting from 28/2/2023",
         start: "2023",
         assessment: "",
         modules: "Year 3: Mobile Applications Development, Game Engines & Game Development, Advanced Database Systems, Network Switching & Routing, Cloud Computing, Enterprise Architecture & System Development, Work-integrated Learning, General Education Core. Module: Chinese 2, General Education Core Module: English for Academic Studies 2, General Education Core Module: English for Professional Purposes, General Education Elective Module 3, Program Elective Module 1. Year 4: Cybersecurity Operations, Machine Learning, Data Science, Modern Web Technology &        Development, Enterprise Network Technologies, Advanced Topics in ICT, Program Elective Module 2, Program Elective Module 3, Final Year Project 1, Final Year Project 2, General Education Elective Module 4",
@@ -264,7 +266,7 @@ const data = [
         qf: 5,
         duration: 24,
         tuition: 2605.00,
-        intake: "28/2/2023",
+        intake: "Starting from 28/2/2023",
         start: "2023",
         assessment: "",
         modules: "Year 3: Mobile Applications Development, Game Engines & Game Development, Advanced Database Systems, Network Switching & Routing, Cloud Computing, Enterprise Architecture & System Development, Work-integrated Learning, General Education Core. Module: Chinese 2, General Education Core Module: English for Academic Studies 2, General Education Core Module: English for Professional Purposes, General Education Elective Module 3, Program Elective Module 1. Year 4: Cybersecurity Operations, Machine Learning, Data Science, Modern Web Technology &        Development, Enterprise Network Technologies, Advanced Topics in ICT, Program Elective Module 2, Program Elective Module 3, Final Year Project 1, Final Year Project 2, General Education Elective Module 4",
@@ -486,6 +488,25 @@ const data = [
         modules: "Year 1: Computer Architecure, Mathematics for Computing, Programming, Cyber Security for Society, Algorithms and Data Types, Information Systems and Databases. Year 2: Applied Cryptography, Theory of Computation, Artificial Intelligence, Network and Security, Cyber Threat Analysis, Group Research Project. Year 3: Project (over 2 semesters), Enterprise Security Management, Cyber Crime, Advanced Topics in Cyber Security, Machine Learning.",
         link: "https://www.hkit.edu.hk/en/degree_uwl.php?pgm=uwlbs"
     },
+    {
+        id: 30,
+        college: "Thei",
+        logo: "thei.jpg",
+        venue: "Chai Wan and other campuses",
+        category: "Digital Media",
+        course: "Bachelor of Science (Honours) Multimedia Technology and Innovation",
+        university: "N/A",
+        mode: "Full Time",
+        qf: 5,
+        duration: 24,
+        tuition: 2605.00,
+        intake: "Starting from 28/2/2023",
+        start: "2023",
+        assessment: "",
+        modules: "Year 3: GE Core Module: Chinese 2, GE Core Module: English for Academic Studies 2, Multimedia Studio, Game Engines & Games Development, Mobile Applications Development, Embedded Systems & Hardware Interface, GE Elective Module 3, Mixed-reality Programming, Game Design, Maker Culture Studio, Reasearch & Creativec Thinking. Year 4: GE Core Module: English for Professional Purposes, New Media & Digital Culture, Ubiquitous Computing, Data Security for Multimedia, Digital Marketing, Final Year Project, GE Elective Module 4, Information Visulaisation, Advanced Topics in Multimedia Technology",
+        link: "https://www.thei.edu.hk/programme/innovation-and-information-technology/bachelor-of-science-honours-in-information-and-communications-technology"
+    },
+    
 ];
 
 const coursesContainer = document.querySelector(".courses");
