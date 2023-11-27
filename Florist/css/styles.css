@@ -1,0 +1,26 @@
+img {
+    max-width: auto;
+    height: 170px;
+}
+.bg-img {
+    background-image: url("../images/food_0001.jpeg");
+    min-height: 100px;
+}
+.bg-img2 {
+    background-color:lightgrey;
+    min-height: 100px;
+}
+.navbar {
+    background: transparent !important;
+}
+
+.enlarge-onhover {
+    width: 100%;
+    height: 100%;
+    transition: transform .5s;
+}
+
+.enlarge-onhover:hover {
+    transform: scale(1.1);
+}
+
